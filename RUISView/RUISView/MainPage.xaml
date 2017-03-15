@@ -30,7 +30,7 @@
 
         </Canvas>
 
-        <Canvas x:Name="cvsMenu" Width="600" Height="360">
+        <Canvas x:Name="cvsPopUp" Width="600" Height="360">
             
             
             

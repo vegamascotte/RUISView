@@ -8,46 +8,65 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using RUISView.Resources;
+using System.Data.Linq;
+using System.Data.Linq.Mapping;
+using System.ComponentModel;
+using System.Collections.ObjectModel;
 
 namespace RUISView
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : PhoneApplicationPage, INotifyPropertyChanged
     {
+        //Datacontext for the local db
+        private Utility_Classes.DataContextBuilder Database;
+
+        // Definition for observable collection that controls can be bound to
+        private ObservableCollection<DatabaseModel.Photos> _Photos;
+        public ObservableCollection<DatabaseModel.Photos> Photos
+        {
+            get
+            {
+                return _Photos;
+            }
+            set
+            {
+                if(_Photos != value)
+                {
+                    _Photos = value;
+                    NotifyPropertyChanged("DatabaseModel.Photos");
+                }
+            }
+        }
+
         // Constructor
         public MainPage()
         {
             InitializeComponent();
 
-            // Set the data context of the listbox control to the sample data
-            DataContext = App.ViewModel;
+            Database = new Utility_Classes.DataContextBuilder(Utility_Classes.DataContextBuilder.DBConnectionString);
+            this.DataContext = this;
+        }
+        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            // Define the query to gather all of the to-do items.
+            //var dbPhotos = from DatabaseModel.Photos photos in Database.Photos select photos;
 
-            // Sample code to localize the ApplicationBar
-            //BuildLocalizedApplicationBar();
+            // Execute the query and place the results into a collection.
+            //Photos = new ObservableCollection<DatabaseModel.Photos>(dbPhotos);
+
+            // Call the base method.
+            base.OnNavigatedTo(e);
         }
 
-        // Load data for the ViewModel Items
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        // Used to notify the app that a property has changed.
+        private void NotifyPropertyChanged(string propertyName)
         {
-            if (!App.ViewModel.IsDataLoaded)
+            if (PropertyChanged != null)
             {
-                App.ViewModel.LoadData();
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
-
-        // Sample code for building a localized ApplicationBar
-        //private void BuildLocalizedApplicationBar()
-        //{
-        //    // Set the page's ApplicationBar to a new instance of ApplicationBar.
-        //    ApplicationBar = new ApplicationBar();
-
-        //    // Create a new button and set the text value to the localized string from AppResources.
-        //    ApplicationBarIconButton appBarButton = new ApplicationBarIconButton(new Uri("/Assets/AppBar/appbar.add.rest.png", UriKind.Relative));
-        //    appBarButton.Text = AppResources.AppBarButtonText;
-        //    ApplicationBar.Buttons.Add(appBarButton);
-
-        //    // Create a new menu item with the localized string from AppResources.
-        //    ApplicationBarMenuItem appBarMenuItem = new ApplicationBarMenuItem(AppResources.AppBarMenuItemText);
-        //    ApplicationBar.MenuItems.Add(appBarMenuItem);
-        //}
     }
 }

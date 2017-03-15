@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>JORIS-LAPTOP</Machine>
-    <WindowsUser>Joris</WindowsUser>
+    <Machine>DESKTOP-9R51VVU</Machine>
+    <WindowsUser>Jeebleton</WindowsUser>
     <TargetPlatformIdentifier>Windows Phone</TargetPlatformIdentifier>
     <TargetOsVersion>6.3</TargetOsVersion>
     <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
@@ -10,69 +10,69 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>7e4436a3-51b3-4807-803b-0bd1a46f8d48</PackageIdentityName>
     <PackageIdentityPublisher>CN=Joris</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\obj\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\RUISView.dll">
+    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\RUISView.dll">
       <PackagePath>RUISView.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\AlignmentGrid.png">
+    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\AlignmentGrid.png">
       <PackagePath>Assets\AlignmentGrid.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\ApplicationIcon.png">
+    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\ApplicationIcon.png">
       <PackagePath>Assets\ApplicationIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\BadgeLogo.png">
+    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\BadgeLogo.png">
       <PackagePath>Assets\BadgeLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\Logo.png">
+    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\SquareTile150x150.png">
+    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\SquareTile150x150.png">
       <PackagePath>Assets\SquareTile150x150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\SquareTile71x71.png">
+    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\SquareTile71x71.png">
       <PackagePath>Assets\SquareTile71x71.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\WideLogo.png">
+    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\WideLogo.png">
       <PackagePath>Assets\WideLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\Tiles\FlipCycleTileLarge.png">
+    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\Tiles\FlipCycleTileLarge.png">
       <PackagePath>Assets\Tiles\FlipCycleTileLarge.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\Tiles\FlipCycleTileMedium.png">
+    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\Tiles\FlipCycleTileMedium.png">
       <PackagePath>Assets\Tiles\FlipCycleTileMedium.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\Tiles\FlipCycleTileSmall.png">
+    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\Tiles\FlipCycleTileSmall.png">
       <PackagePath>Assets\Tiles\FlipCycleTileSmall.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\Tiles\IconicTileMediumLarge.png">
+    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\Tiles\IconicTileMediumLarge.png">
       <PackagePath>Assets\Tiles\IconicTileMediumLarge.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\Tiles\IconicTileSmall.png">
+    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\Tiles\IconicTileSmall.png">
       <PackagePath>Assets\Tiles\IconicTileSmall.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>

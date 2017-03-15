@@ -16,12 +16,11 @@
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
-        <Image x:Name="imgSlideShow" HorizontalAlignment="Left" Height="480" VerticalAlignment="Top" Width="728"/>
-        <Canvas x:Name="cvOverlay" HorizontalAlignment="Left" Height="480" VerticalAlignment="Top" Width="728">
-            <Image x:Name="imgCanvas" Height="100" Canvas.Left="315" Canvas.Top="190" Width="100"/>
-            <Image x:Name="imgSideMenu" Height="50" Width="50"/>
-        </Canvas>
-
+        <Image x:Name="imgSlideShow" HorizontalAlignment="Left" Height="480" VerticalAlignment="Top" Width="800"/>
+            <Canvas x:Name="cvOverlay" HorizontalAlignment="Left" Height="480" VerticalAlignment="Top" Width="800">
+                <Image x:Name="imgCanvas" Height="100" Canvas.Left="315" Canvas.Top="190" Width="100"/>
+                <Image x:Name="imgSideMenu" Height="50" Width="50"/>
+            </Canvas>
     </Grid>
 
 </phone:PhoneApplicationPage>

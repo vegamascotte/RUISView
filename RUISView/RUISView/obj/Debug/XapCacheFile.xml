@@ -1,6 +1,6 @@
-﻿<xapCache source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\RUISView_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="15-3-2017 09:04:55">
+﻿<xapCache source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\RUISView_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="15-3-2017 09:32:53">
   <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="15-3-2017 09:04:53" />
-  <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\obj\Debug\RUISView.dll" archivePath="RUISView.dll" lastWriteTime="15-3-2017 09:04:53" />
+  <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\obj\Debug\RUISView.dll" archivePath="RUISView.dll" lastWriteTime="15-3-2017 09:32:51" />
   <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="15-3-2017 08:47:07" />
   <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="15-3-2017 08:47:07" />
   <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="15-3-2017 08:47:07" />
@@ -17,6 +17,6 @@
   <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="15-3-2017 08:47:07" />
   <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="15-3-2017 08:47:07" />
   <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="15-3-2017 08:47:22" />
-  <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="15-3-2017 09:04:54" />
+  <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="15-3-2017 09:32:52" />
   <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="15-3-2017 09:04:54" />
 </xapCache>

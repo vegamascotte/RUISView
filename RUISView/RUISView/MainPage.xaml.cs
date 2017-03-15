@@ -34,6 +34,11 @@ namespace RUISView
             }
         }
 
+        private void Pivot_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()
         //{

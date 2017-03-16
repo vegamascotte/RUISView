@@ -8,32 +8,33 @@ namespace RUISView
 {
     class PhotoView
     {
-        private string m_nextPhotoName;
+        private object m_nextPhoto;
         private string m_currentPhotoName;
-
+        private string m_nextPhotoName;
+       
         PhotoView ()
         {
-
+            
         }
 
         #region PublicMethods
 
 
-        public object GetNextPhoto()
+        public void GetNextPhoto()
         {
             GetNewPhoto(); // needs to be async
-
+            m_currentPhotoName = m_nextPhotoName;
         }
+        
+
 
         #endregion
 
         #region PrivateMethods
 
-        private void GetNewNextPhoto() 
+        private void GetNewPhotoName()
         {
-            //need to add a call to photomanager to see what will be the next photo.
-            m_currentPhotoName = m_nextPhotoName;
-            m_nextPhotoName = null; // here is where the call will be.
+            // call the photo manager to see what the new photo will be.
         }
 
         private object GetNewPhoto()

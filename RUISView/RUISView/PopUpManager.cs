@@ -8,5 +8,11 @@ namespace RUISView
 {
     class PopUpManager
     {
+
+        private string m_nameOfPopUp;
+        private 
+
+
+
     }
 }

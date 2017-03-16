@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="RUISView.PopUp"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="240" d:DesignWidth="400">
+
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneChromeBrush}">
+        <TextBlock x:Name="txtbOne" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Snelheid" VerticalAlignment="Top" Height="27" Width="76"/>
+        <TextBlock x:Name="txtbTwo" HorizontalAlignment="Left" Margin="10,71,0,0" TextWrapping="Wrap" Text="Herladen bij start" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtbThree" HorizontalAlignment="Left" Margin="10,142,0,71" TextWrapping="Wrap" Text="Toon naam" RenderTransformOrigin="0.531,4.361"/>
+        <TextBlock x:Name="txtbFour" HorizontalAlignment="Left" Margin="10,213,0,0" TextWrapping="Wrap" Text="Toon naam duratie" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbInputTwo" Content="" HorizontalAlignment="Left" Margin="225,55,0,0" VerticalAlignment="Top" Width="58" Height="73"/>
+        <CheckBox x:Name="cbInputThree" HorizontalAlignment="Left" Margin="225,123,0,0" VerticalAlignment="Top" Width="58" Height="73"/>
+        <TextBlock x:Name="txtbAfterOne" TextWrapping="Wrap" Text="seconden" Width="100" Margin="290,10,10,203"/>
+        <TextBox x:Name="txtInputOne" HorizontalAlignment="Left" Height="50" Margin="225,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" VerticalScrollBarVisibility="Disabled" InputScope="OneChar"/>
+        <TextBox x:Name="txtInputFour" HorizontalAlignment="Left" Height="50" Margin="225,201,0,-11" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" VerticalScrollBarVisibility="Disabled" InputScope="OneChar"/>
+        <TextBlock x:Name="txtbAfterOne_Copy" TextWrapping="Wrap" Text="seconden" Width="100" Margin="290,215,10,-2"/>
+    </Grid>
+
+</UserControl>

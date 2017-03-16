@@ -29,12 +29,5 @@
             <Button x:Name="btnSideMenu" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0" Click="btnSideMenu_Click"/>
 
         </Canvas>
-
-        <Canvas x:Name="cvsPopUp" Width="600" Height="360">
-            
-            
-            
-        </Canvas>
-
     </Grid>
 </phone:PhoneApplicationPage>

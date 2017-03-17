@@ -5,7 +5,7 @@ using System.Data.Linq;
 namespace RUISView.DatabaseModel
 {
     [Table(Name = "Photos")]
-    public class Photos : INotifyPropertyChanged
+    public class Photos : INotifyPropertyChanged, INotifyPropertyChanging
     {
         private int _p_PhotoId;
         [Column(IsPrimaryKey = true, IsDbGenerated = true, DbType = "INT NOT NULL Identity", CanBeNull = false, AutoSync = AutoSync.OnInsert)]
@@ -15,15 +15,43 @@ namespace RUISView.DatabaseModel
             {
                 return _p_PhotoId;
             }
+            private set
+            {
+                if (_p_PhotoId != value)
+                {
+                    NotifyPropertyChanging("_p_PhotoId");
+                    _p_PhotoId = value;
+                    NotifyPropertyChanged("_p_PhotoId");
+                }
+            }
         }
 
-        private EntitySet<P_Rules> _P_Rules;
-        [Association(Storage = "_P_Rules", OtherKey = "_p_PhotoId")]
-        public EntitySet<P_Rules> P_Rules
+        //private EntitySet<P_Rules> _P_Rules;
+        //[Association(Storage = "_P_Rules", OtherKey = "_p_PhotoId")]
+        //public EntitySet<P_Rules> P_Rules
+        //{
+        //    get { return this._P_Rules; }
+        //    set { this._P_Rules.Assign(value); }
+        //}
+
+        /// 
+        /// 
+        /// 
+        /// 
+        [Column]
+        private int MapId;
+        private EntityRef<Maps> m_Maps;
+        [Association(Storage = "m_Maps", ThisKey = "MapId")]
+        private Maps Maps
         {
-            get { return this._P_Rules; }
-            set { this._P_Rules.Assign(value); }
+            get { return this.m_Maps.Entity; }
+            set { this.m_Maps.Entity = value; }
         }
+        /// 
+        /// 
+        /// 
+        /// 
+
 
         private int _p_PhotoName;
         [Column]

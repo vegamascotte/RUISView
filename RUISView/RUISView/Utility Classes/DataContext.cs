@@ -12,7 +12,7 @@ namespace RUISView.Utility_Classes
         public static string DBConnectionString = "DataSource=isostore:/RUISviewDB.sdf";
         public Table<DatabaseModel.Maps> Maps;
         public Table<DatabaseModel.Photos> Photos;
-        public Table<DatabaseModel.P_Rules> P_Rules;
+        //public Table<DatabaseModel.P_Rules> P_Rules;
 
         public DataContextBuilder(string connectionString)
             : base(connectionString)

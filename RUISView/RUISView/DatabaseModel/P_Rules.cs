@@ -27,7 +27,7 @@ namespace RUISView.DatabaseModel
         private int _m_MapId;
 
         private EntityRef<Maps> _Maps;
-        [Association(Storage = "_Maps", OtherKey = "_m_MapId", IsForeignKey = true)]
+        [Association(Storage = "_Maps",ThisKey = "_m_MapId")]
         public Maps Maps
         {
             get { return this._Maps.Entity; }

@@ -38,6 +38,24 @@ namespace RUISView
             }
         }
 
+
+        private ObservableCollection<DatabaseModel.Maps> _Maps;
+        public ObservableCollection<DatabaseModel.Maps> Maps
+        {
+            get
+            {
+                return _Maps;
+            }
+            set
+            {
+                if (_Maps != value)
+                {
+                    _Maps = value;
+                    NotifyPropertyChanged("DatabaseModel.Maps");
+                }
+            }
+        }
+
         // Constructor
         public MainPage()
         {
@@ -67,6 +85,11 @@ namespace RUISView
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            textBlock.Text = Database.DatabaseExists().ToString();
         }
     }
 }

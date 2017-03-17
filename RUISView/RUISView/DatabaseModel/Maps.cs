@@ -5,10 +5,24 @@ using System.Data.Linq;
 namespace RUISView.DatabaseModel
 {
     [Table(Name = "Maps")]
-    public class Maps : INotifyPropertyChanged
+    public class Maps : INotifyPropertyChanged, INotifyPropertyChanging
     {
+        public Maps()
+        {
+           // this._P_Rules = new EntitySet<DatabaseModel.P_Rules>(delegate (P_Rules entity)
+           //{
+           //    this.NotifyPropertyChanging("P_Rules");
+           //    entity.Maps = this;
+           //},
+           // delegate (P_Rules entity)
+           // {
+           //     this.NotifyPropertyChanged("P_Rules");
+           //     entity.Maps = null;
+           // });
+        }
+
         private int _m_MapId;
-        [Column(IsPrimaryKey = true, IsDbGenerated = true, DbType = "INT NOT NULL Identity", CanBeNull = false, AutoSync = AutoSync.OnInsert)]
+        [Column(IsPrimaryKey = true, Storage ="_m_MapId", IsDbGenerated = true, DbType = "INT NOT NULL Identity", CanBeNull = false, AutoSync = AutoSync.OnInsert)]
         public int m_MapId
         {
             get
@@ -17,16 +31,27 @@ namespace RUISView.DatabaseModel
             }
         }
 
-        private EntitySet<P_Rules> _P_Rules;
-        [Association(Storage = "_P_Rules", OtherKey = "_m_MapId")]
-        public EntitySet<P_Rules> P_Rules
+        //private EntitySet<P_Rules> _P_Rules;
+        //[Association(Storage = "_P_Rules", OtherKey = "_m_MapId")]
+        //public EntitySet<P_Rules> P_Rules
+        //{
+        //    get { return this._P_Rules; }
+        //    set { this._P_Rules.Assign(value); }
+        //}
+
+        [Column]
+        private int PhotoId;
+
+        private EntitySet<Photos> _Photos;
+        [Association(Storage = "_Photos", OtherKey = "MapId")]
+        public EntitySet<Photos> Photos
         {
-            get { return this._P_Rules; }
-            set { this._P_Rules.Assign(value); }
-        }
+            get { return this._Photos; }
+            set { this._Photos.Assign(value); }
+        } 
 
         private string _m_MapName;
-        [Column]
+        [Column(Storage = "_m_MapName")]
         public string m_MapName
         {
             get
@@ -45,7 +70,7 @@ namespace RUISView.DatabaseModel
         }
 
         private string _m_MapLocation;
-        [Column]
+        [Column(Storage = "_m_MapLocation")]
         public string m_MapLocation
         {
             get

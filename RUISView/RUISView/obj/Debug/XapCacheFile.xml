@@ -1,6 +1,6 @@
-﻿<xapCache source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\RUISView_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="15/03/2017 12:13:13">
-  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="15/03/2017 11:32:05" />
-  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\obj\Debug\RUISView.dll" archivePath="RUISView.dll" lastWriteTime="15/03/2017 12:13:12" />
+﻿<xapCache source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\RUISView_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="16/03/2017 11:59:43">
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="16/03/2017 10:52:05" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\obj\Debug\RUISView.dll" archivePath="RUISView.dll" lastWriteTime="16/03/2017 11:59:43" />
   <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="15/03/2017 09:13:57" />
   <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="15/03/2017 09:13:57" />
   <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="15/03/2017 09:13:57" />
@@ -23,6 +23,6 @@
   <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="15/03/2017 09:13:57" />
   <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="15/03/2017 09:13:57" />
   <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="15/03/2017 09:13:57" />
-  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="15/03/2017 12:13:13" />
-  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="15/03/2017 11:32:05" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="16/03/2017 11:59:43" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="16/03/2017 10:52:05" />
 </xapCache>

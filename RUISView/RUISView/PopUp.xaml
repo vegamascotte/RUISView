@@ -1,0 +1,64 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone" x:Class="RUISView.PopUp"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="240" d:DesignWidth="400" phone:PhoneApplicationPage.Orientation="Landscape">
+
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneChromeBrush}">
+        <Canvas x:Name="cnvOptions" Visibility="Collapsed">
+
+            <TextBlock x:Name="txtblockSnelheid" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Snelheid" VerticalAlignment="Top" Height="27" Width="76"/>
+            <TextBlock x:Name="txtblockHerladenBijStart" HorizontalAlignment="Left" Margin="10,71,0,0" TextWrapping="Wrap" Text="Herladen bij start" VerticalAlignment="Top"/>
+            <TextBlock x:Name="txtblockToonNaam" HorizontalAlignment="Left" Margin="10,142,0,71" TextWrapping="Wrap" Text="Toon naam" RenderTransformOrigin="0.531,4.361"/>
+            <TextBlock x:Name="txtblockToonNaamDuratie" HorizontalAlignment="Left" Margin="10,213,0,0" TextWrapping="Wrap" Text="Toon naam duratie" VerticalAlignment="Top"/>
+
+            <TextBlock x:Name="txtblockSnelheidSeconden" TextWrapping="Wrap" Text="seconden" Width="100" Margin="290,10,10,203"/>
+            <TextBlock x:Name="txtblockToonNaamDuratieSeconden" TextWrapping="Wrap" Text="seconden" Width="100" Margin="290,215,10,-2"/>
+
+            <TextBox x:Name="txtboxInputSnelheid" HorizontalAlignment="Left" Height="50" Margin="225,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" VerticalScrollBarVisibility="Disabled" InputScope="OneChar"/>
+            <TextBox x:Name="txtboxInputToonNaamDuratie" HorizontalAlignment="Left" Height="50" Margin="225,201,0,-11" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" VerticalScrollBarVisibility="Disabled" InputScope="OneChar"/>
+
+            <CheckBox x:Name="cbInputHerladenBijStart" Content="" HorizontalAlignment="Left" Margin="225,55,0,0" VerticalAlignment="Top" Width="58" Height="73"/>
+            <CheckBox x:Name="cbInputToonNaam" HorizontalAlignment="Left" Margin="225,123,0,0" VerticalAlignment="Top" Width="58" Height="73"/>
+
+        </Canvas>
+
+        <Canvas x:Name="cnvStatistics" Visibility="Collapsed">
+
+            <TextBlock x:Name="txtblockHoeveelheidFotos" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Hoeveelheid foto's" VerticalAlignment="Top" Height="27" Width="210" Canvas.Top="10"/>
+            <TextBlock x:Name="txtblockAantalGetoondeFotos" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Aantal getoonde foto's " VerticalAlignment="Top" Height="27" Width="210" Canvas.Top="53"/>
+            <TextBlock x:Name="txtblockTijdActief" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Tijd actief" VerticalAlignment="Top" Height="27" Width="210" Canvas.Top="103"/>
+            <TextBlock x:Name="txtblockLangstGetoondeFoto" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Langst getoonde foto" VerticalAlignment="Top" Height="27" Width="210" Canvas.Top="155"/>
+            <TextBlock x:Name="txtblockKortstGetoondeFoto" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Kortst getoonde foto" VerticalAlignment="Top" Height="27" Width="210" Canvas.Top="203"/>
+
+            <TextBlock x:Name="txtblockHoeveelheidFotosOutput" HorizontalAlignment="Center" TextWrapping="Wrap" Text="# Foto's" VerticalAlignment="Top" Height="27" Width="90" Canvas.Left="310" Canvas.Top="10"/>
+            <TextBlock x:Name="txtblockAantalGetoondeFotosOutput" HorizontalAlignment="Center" TextWrapping="Wrap" Text="# Foto's" VerticalAlignment="Top" Height="27" Width="90" Canvas.Left="310" Canvas.Top="53"/>
+            <TextBlock x:Name="txtblockTijdActiefOutput" HorizontalAlignment="Center" TextWrapping="Wrap" Text="UU:MM" VerticalAlignment="Top" Height="27" Width="90" Canvas.Left="310" Canvas.Top="103"/>
+            <TextBlock x:Name="txtblockLangstGetoondeFotoOutput" HorizontalAlignment="Center" TextWrapping="Wrap" Text="UU:MM" VerticalAlignment="Top" Height="27" Width="90" Canvas.Left="310" Canvas.Top="155"/>
+            <TextBlock x:Name="txtblockKortstGetoondeFotoOutput" HorizontalAlignment="Center" TextWrapping="Wrap" Text="UU:MM" VerticalAlignment="Top" Height="27" Width="90" Canvas.Left="310" Canvas.Top="203"/>
+
+        </Canvas>
+
+        <Canvas x:Name="cnvInfo" Visibility="Collapsed">
+
+            <TextBlock x:Name="txtblockVersie" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Versie" VerticalAlignment="Top"/>
+            <TextBlock x:Name="txtblockBedrijf" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Bedrijf" VerticalAlignment="Top" Canvas.Left="10" Canvas.Top="69"/>
+            <TextBlock x:Name="txtblockLicentie" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Licentie" VerticalAlignment="Top" Canvas.Left="10" Canvas.Top="136"/>
+            <TextBlock x:Name="txtblockContactGegevens" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Contact gegevens" VerticalAlignment="Top" Canvas.Left="10" Canvas.Top="203"/>
+
+            <TextBlock x:Name="txtblockVersieOutput" HorizontalAlignment="Left" TextWrapping="Wrap" Text="V 1.0.0" VerticalAlignment="Top" Canvas.Left="320" Canvas.Top="10"/>
+            <TextBlock x:Name="txtblockBedrijfOutput" HorizontalAlignment="Left" TextWrapping="Wrap" Text="RUIS" VerticalAlignment="Top" Canvas.Left="320" Canvas.Top="69"/>
+            <TextBlock x:Name="txtblockLicentieOutput" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Contract" VerticalAlignment="Top" Canvas.Left="320" Canvas.Top="136"/>
+            <TextBlock x:Name="txtblockContactGegevensOutput" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ruis" VerticalAlignment="Top" Canvas.Left="320" Canvas.Top="203"/>
+
+        </Canvas>
+    </Grid>
+
+</UserControl>

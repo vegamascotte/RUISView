@@ -1,0 +1,33 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:RUISView" x:Name="RUISView"
+    x:Class="RUISView.MainPage"
+    mc:Ignorable="d"
+    d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape"  Orientation="Landscape"
+    shell:SystemTray.IsVisible="False">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Image x:Name="imgSlideShow" HorizontalAlignment="Left" Height="480" VerticalAlignment="Top" Width="800"/>
+
+        <!--It's in a canvas to be able to hide things and reactavite without too much trouble-->
+        <Canvas x:Name="cnvOverlay">
+            <!--Play and pause button are aligned here-->
+            <Image x:Name="imgPlayPause" Width="100" Height="100" Canvas.Left="350" Canvas.Top="190" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Button x:Name="btnPlayPause" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="350" Canvas.Top="190" Opacity="0" Click="btnPlayPause_Click"/>
+
+            <!--Side menu is alligned here-->
+            <Image x:Name="imgSideMenu" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Button x:Name="btnSideMenu" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0" Click="btnSideMenu_Click"/>
+
+        </Canvas>
+    </Grid>
+</phone:PhoneApplicationPage>

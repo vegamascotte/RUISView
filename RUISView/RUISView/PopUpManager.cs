@@ -10,7 +10,6 @@ namespace RUISView
     {
 
         private string m_nameOfPopUp;
-        private 
 
 
 

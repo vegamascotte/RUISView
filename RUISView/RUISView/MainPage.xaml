@@ -8,7 +8,6 @@
     xmlns:local="clr-namespace:RUISView" x:Name="RUISView"
     x:Class="RUISView.MainPage"
     mc:Ignorable="d"
-    d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
@@ -17,17 +16,25 @@
 
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <Image x:Name="imgSlideShow" HorizontalAlignment="Left" Height="480" VerticalAlignment="Top" Width="800"/>
-
         <!--It's in a canvas to be able to hide things and reactavite without too much trouble-->
-        <Canvas x:Name="cnvOverlay">
-            <!--Play and pause button are aligned here-->
-            <Image x:Name="imgPlayPause" Width="100" Height="100" Canvas.Left="350" Canvas.Top="190" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Button x:Name="btnPlayPause" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="350" Canvas.Top="190" Opacity="0" Click="btnPlayPause_Click"/>
+        <!--
+        <Canvas x:Name="cnvOverlay" Visibility="Collapsed">
+        -->
+        <!--Play and pause button are aligned here-->
+            <Button x:Name="btnPlayPause" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnPlayPause_Click" Margin="350,175,0,0" BorderThickness="0" BorderBrush="{x:Null}" ClickMode="Press" Foreground="{StaticResource PhoneBackgroundBrush}" RenderTransformOrigin="0.5,0.5">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="/Assets/play.png"/>
+                </Button.Background>
+            </Button>
 
             <!--Side menu is alligned here-->
-            <Image x:Name="imgSideMenu" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Button x:Name="btnSideMenu" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0" Click="btnSideMenu_Click"/>
-
+            <Button x:Name="btnSideMenu" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnSideMenu_Click"  Margin="10,10,0,0" BorderBrush="{x:Null}" Foreground="{StaticResource PhoneBackgroundBrush}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/parent.png"/>
+                </Button.Background>
+            </Button>
+        <!--
         </Canvas>
+        -->
     </Grid>
 </phone:PhoneApplicationPage>

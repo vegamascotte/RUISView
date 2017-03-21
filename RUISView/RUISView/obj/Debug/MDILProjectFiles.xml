@@ -3,9 +3,10 @@
   <XAPFiles>
     <File>resources.pri</File>
     <File>RUISView.dll</File>
-    <File>Assets\AlignmentGrid.png</File>
     <File>Assets\BadgeLogo.png</File>
     <File>Assets\Logo.png</File>
+    <File>Assets\parent.png</File>
+    <File>Assets\play.png</File>
     <File>Assets\SplashScreen.png</File>
     <File>Assets\SquareTile150x150.png</File>
     <File>Assets\SquareTile71x71.png</File>

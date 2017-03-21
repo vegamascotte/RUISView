@@ -25,9 +25,6 @@
     <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\RUISView.dll">
       <PackagePath>RUISView.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\AlignmentGrid.png">
-      <PackagePath>Assets\AlignmentGrid.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\ApplicationIcon.png">
       <PackagePath>Assets\ApplicationIcon.png</PackagePath>
     </AppxPackagedFile>
@@ -37,6 +34,12 @@
     <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\parent.png">
+      <PackagePath>Assets\parent.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\play.png">
+      <PackagePath>Assets\play.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>

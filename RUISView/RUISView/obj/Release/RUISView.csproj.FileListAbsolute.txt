@@ -33,3 +33,4 @@ C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\obj\Release\MultipleQual
 C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\obj\Release\ProjectArchitectures.txt
 C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\obj\Release\MDILProjectFiles.xml
 C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\obj\Release\XapCacheFile.xml
+C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\obj\Release\PopUp.g.cs

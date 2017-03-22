@@ -1,91 +1,67 @@
 ﻿using System.Windows;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
-using Microsoft.Phone.Shell;
-using RUISView.Resources;
-using System.Data.Linq;
-using System.Data.Linq.Mapping;
-using System.ComponentModel;
-using System.Collections.ObjectModel;
-using Windows.UI.Popups;
+using Windows.UI.Input;
+using System.Windows.Controls;
+using System.Windows.Media.Imaging;
+
 
 namespace RUISView
 {
-    public partial class MainPage : PhoneApplicationPage, INotifyPropertyChanged
-    {
-        //Datacontext for the local db
-        private Utility_Classes.DataContextBuilder Database;
-
-        // Definition for observable collection that controls can be bound to
-        private ObservableCollection<DatabaseModel.Photos> _Photos;
-        public ObservableCollection<DatabaseModel.Photos> Photos
-        {
-            get
-            {
-                return _Photos;
-            }
-            set
-            {
-                if(_Photos != value)
-                {
-                    _Photos = value;
-                    NotifyPropertyChanged("DatabaseModel.Photos");
-                }
-            }
-        }
-
-
-        private ObservableCollection<DatabaseModel.Maps> _Maps;
-        public ObservableCollection<DatabaseModel.Maps> Maps
-        {
-            get
-            {
-                return _Maps;
-            }
-            set
-            {
-                if (_Maps != value)
-                {
-                    _Maps = value;
-                    NotifyPropertyChanged("DatabaseModel.Maps");
-                }
-            }
-        }
+    public partial class MainPage : PhoneApplicationPage
+    { 
+        private bool m_isPlaying = false;
+        private GestureRecognizer m_gRecon = new GestureRecognizer();
+        //private bool m_sideMenuIsShowing = false;
+        private PhotoView m_photoView = new PhotoView();
+        private System.Windows.Threading.DispatcherTimer m_timer = new System.Windows.Threading.DispatcherTimer();
+        private bool m_timerIsRunning = false;
 
         // Constructor
         public MainPage()
         {
             InitializeComponent();
 
-            Database = new Utility_Classes.DataContextBuilder(Utility_Classes.DataContextBuilder.DBConnectionString);
-            this.DataContext = this;
-        }
-        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
-        {
-            // Define the query to gather all of the to-do items.
-            //var dbPhotos = from DatabaseModel.Photos photos in Database.Photos select photos;
+            // Set the data context of the listbox control to the sample data
 
-            // Execute the query and place the results into a collection.
-            //Photos = new ObservableCollection<DatabaseModel.Photos>(dbPhotos);
 
-            // Call the base method.
-            base.OnNavigatedTo(e);
+
+            m_timer.Interval = new System.TimeSpan(50000000);
+            
+            
+            // Sample code to localize the ApplicationBar
+            //BuildLocalizedApplicationBar();
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
 
-        // Used to notify the app that a property has changed.
-        private void NotifyPropertyChanged(string propertyName)
+        // Load data for the ViewModel Items
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            if (PropertyChanged != null)
+            if (!App.ViewModel.IsDataLoaded)
             {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+                App.ViewModel.LoadData();
             }
         }
 
         private void btnPlayPause_Click(object sender, RoutedEventArgs e)
         {
+            if (!m_isPlaying)
+            {
+                m_timerIsRunning = m_timer.IsEnabled;
+                m_timer.Start();
+                m_timer.Tick += M_timer_Tick;
 
+                BitmapImage bmp = new BitmapImage();
+                bmp.SetSource(m_photoView.GetNextPhotoLocation());
+                imgSlideShow.Source = bmp;
+
+                m_isPlaying = true;
+            }
+            else
+            {
+                m_timer.Stop();
+                m_isPlaying = false;
+            }
         }
 
         private void btnSideMenu_Click(object sender, RoutedEventArgs e)
@@ -93,20 +69,17 @@ namespace RUISView
 
         }
 
-        // Sample code for building a localized ApplicationBar
-        //private void BuildLocalizedApplicationBar()
-        //{
-        //    // Set the page's ApplicationBar to a new instance of ApplicationBar.
-        //    ApplicationBar = new ApplicationBar();
+        private void M_gRecon_Tapped(GestureRecognizer sender, TappedEventArgs args)
+        {
+            //cnvOverlay.Visibility = Visibility.Visible;
+        }
 
-        //    // Create a new button and set the text value to the localized string from AppResources.
-        //    ApplicationBarIconButton appBarButton = new ApplicationBarIconButton(new Uri("/Assets/AppBar/appbar.add.rest.png", UriKind.Relative));
-        //    appBarButton.Text = AppResources.AppBarButtonText;
-        //    ApplicationBar.Buttons.Add(appBarButton);
+        private void M_timer_Tick(object sender, System.EventArgs e)
+        {
+            BitmapImage bmp = new BitmapImage();
+            bmp.SetSource(m_photoView.GetNextPhotoLocation());
+            imgSlideShow.Source = bmp;
+        }
 
-        //    // Create a new menu item with the localized string from AppResources.
-        //    ApplicationBarMenuItem appBarMenuItem = new ApplicationBarMenuItem(AppResources.AppBarMenuItemText);
-        //    ApplicationBar.MenuItems.Add(appBarMenuItem);
-        //}
     }
 }

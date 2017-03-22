@@ -6,23 +6,23 @@
     <TargetPlatformIdentifier>Windows Phone</TargetPlatformIdentifier>
     <TargetOsVersion>6.3</TargetOsVersion>
     <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
-    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>7e4436a3-51b3-4807-803b-0bd1a46f8d48</PackageIdentityName>
     <PackageIdentityPublisher>CN=Joris</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\obj\Release\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\RUISView.dll">
+    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Release\RUISView.dll">
       <PackagePath>RUISView.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\AlignmentGrid.png">
@@ -72,7 +72,7 @@
     <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\Tiles\IconicTileSmall.png">
       <PackagePath>Assets\Tiles\IconicTileSmall.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>

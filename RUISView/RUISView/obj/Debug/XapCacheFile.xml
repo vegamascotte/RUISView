@@ -1,10 +1,38 @@
-﻿<xapCache source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\RUISView_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="20-3-2017 14:53:13">
-  <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="20-3-2017 14:41:44" />
-  <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\obj\Debug\RUISView.dll" archivePath="RUISView.dll" lastWriteTime="20-3-2017 14:53:12" />
+<<<<<<< HEAD
+﻿<xapCache source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\RUISView_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="16/03/2017 11:59:43">
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="16/03/2017 10:52:05" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\obj\Debug\RUISView.dll" archivePath="RUISView.dll" lastWriteTime="16/03/2017 11:59:43" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\SplashScreen.png" archivePath="Assets\SplashScreen.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\SquareTile150x150.png" archivePath="Assets\SquareTile150x150.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\SquareTile71x71.png" archivePath="Assets\SquareTile71x71.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\StoreLogo.png" archivePath="Assets\StoreLogo.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\WideLogo.png" archivePath="Assets\WideLogo.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="15/03/2017 11:14:00" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="15/03/2017 09:13:57" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="16/03/2017 11:59:43" />
+  <file source="C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="16/03/2017 10:52:05" />
+=======
+﻿<xapCache source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\RUISView_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="15-3-2017 09:32:53">
+  <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="15-3-2017 09:04:53" />
+  <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\obj\Debug\RUISView.dll" archivePath="RUISView.dll" lastWriteTime="15-3-2017 09:32:51" />
+  <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="15-3-2017 08:47:07" />
   <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="15-3-2017 08:47:07" />
   <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="15-3-2017 08:47:07" />
-  <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\parent.png" archivePath="Assets\parent.png" lastWriteTime="29-3-2010 00:36:34" />
-  <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\play.png" archivePath="Assets\play.png" lastWriteTime="20-3-2017 11:56:25" />
   <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\SplashScreen.png" archivePath="Assets\SplashScreen.png" lastWriteTime="15-3-2017 08:47:07" />
   <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\SquareTile150x150.png" archivePath="Assets\SquareTile150x150.png" lastWriteTime="15-3-2017 08:47:07" />
   <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\SquareTile71x71.png" archivePath="Assets\SquareTile71x71.png" lastWriteTime="15-3-2017 08:47:07" />
@@ -14,10 +42,11 @@
   <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="15-3-2017 08:47:07" />
   <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="15-3-2017 08:47:07" />
   <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="15-3-2017 08:47:07" />
-  <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="17-3-2017 10:35:23" />
+  <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="15-3-2017 08:47:22" />
   <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="15-3-2017 08:47:07" />
   <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="15-3-2017 08:47:07" />
-  <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="17-3-2017 10:35:23" />
-  <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="20-3-2017 14:53:13" />
-  <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="20-3-2017 14:41:44" />
+  <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="15-3-2017 08:47:22" />
+  <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="15-3-2017 09:32:52" />
+  <file source="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="15-3-2017 09:04:54" />
+>>>>>>> master
 </xapCache>

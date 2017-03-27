@@ -31,6 +31,18 @@
     <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\BadgeLogo.png">
       <PackagePath>Assets\BadgeLogo.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\check.png">
+      <PackagePath>Assets\check.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\edit.png">
+      <PackagePath>Assets\edit.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\folder.png">
+      <PackagePath>Assets\folder.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\i.png">
+      <PackagePath>Assets\i.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -43,6 +55,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\play.png">
       <PackagePath>Assets\play.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\refresh.png">
+      <PackagePath>Assets\refresh.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\settings.png">
+      <PackagePath>Assets\settings.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>

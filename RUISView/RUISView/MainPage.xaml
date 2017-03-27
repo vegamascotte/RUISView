@@ -32,15 +32,37 @@
             </Button.Background>
         </Button>
 
-        <Canvas x:Name="cnvSideMenu" Margin="0,0,710,0">
-            <Button x:Name ="btnMapKeuze" Canvas.Top="55" Width="90" BorderBrush="White" Background="Red" />
-            <Button x:Name ="btnHerladen" Canvas.Top="101" Width="90" BorderBrush="White" Background="Red"/>
-            <Button x:Name ="Opties" Canvas.Top="147" Width="90" Click="Opties_Click" Background="Red"/>
-            <Button x:Name ="btnLaatstGetoondeFoto" Canvas.Top="337" Width="90" Background="Red"/>
-            <Button x:Name ="btnStatistieken" Canvas.Top="383" Width="90" Background="Red"/>
-            <Button x:Name ="Info" Canvas.Top="429" Width="90" Background="Red"/>
-
+        <Canvas x:Name="cnvSideMenu" Margin="0,0,722,0" Background="#7F000000" Width="75" Visibility="Collapsed">
+            <Button x:Name ="btnMapKeuze" Width="70" BorderBrush="White" Height="70" BorderThickness="0" >
+                <Button.Background>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/folder.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name ="btnHerladen" Canvas.Top="75" Width="70" BorderBrush="White" Height="70" BorderThickness="0">
+                <Button.Background>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/refresh.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name ="Opties" Canvas.Top="150" Width="70" Click="Opties_Click" Height="70" BorderThickness="0" RenderTransformOrigin="0.563,1.407">
+                <Button.Background>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/settings.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name ="btnLaatstGetoondeFoto" Canvas.Top="255" Width="70" Height="70" BorderThickness="0">
+                <Button.Background>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/check.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name ="btnStatistieken" Canvas.Top="325" Width="70" Height="70" BorderThickness="0">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="/Assets/edit.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name ="Info" Canvas.Top="400" Width="70" Height="70" RenderTransformOrigin="0.522,-0.221" BorderThickness="0">
+                <Button.Background>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/i.png"/>
+                </Button.Background>
+            </Button>
         </Canvas>
-
     </Grid>
 </phone:PhoneApplicationPage>

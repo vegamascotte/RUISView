@@ -16,6 +16,7 @@ namespace RUISView
         private bool m_isPlaying;
         private readonly PhotoView m_photoView = new PhotoView();
         private readonly DispatcherTimer m_timer = new DispatcherTimer();
+        private DispatcherTimer m_sideMenuTimer = new DispatcherTimer();
         private bool m_timerIsRunning;
         private PopUpManager m_popUpManager = new PopUpManager();
         private bool m_popUpIsActive = false;
@@ -27,7 +28,7 @@ namespace RUISView
         {
             InitializeComponent();
             m_timer.Interval = new TimeSpan(50000000);
-
+            m_sideMenuTimer.Interval = new TimeSpan(50000000);
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs p_e)
@@ -68,6 +69,17 @@ namespace RUISView
         private void btnSideMenu_Click(object p_sender, RoutedEventArgs p_e)
         {
             cnvSideMenu.Visibility = cnvSideMenu.Visibility == Visibility.Collapsed ? Visibility.Visible : Visibility.Collapsed;
+            m_sideMenuTimer.Start();
+            m_sideMenuTimer.Tick += M_sideMenuTimer_Tick;
+        }
+
+        private void M_sideMenuTimer_Tick(object sender, EventArgs e)
+        {
+            if (cnvSideMenu.Visibility == Visibility.Visible)
+            {
+                cnvSideMenu.Visibility = Visibility.Collapsed;
+            }
+            m_sideMenuTimer.Stop();
         }
 
         private void M_timer_Tick(object p_sender, EventArgs p_e)
@@ -75,7 +87,9 @@ namespace RUISView
             BitmapImage i_bmp = new BitmapImage();
             i_bmp.SetSource(m_photoView.GetNextPhotoLocation());
             imgSlideShow.Source = i_bmp;
+            if (cnvSideMenu.Visibility != Visibility.Visible) return;
         }
+
 
         private void LayoutRoot_Tap(object p_sender, GestureEventArgs p_e)
         {
@@ -87,6 +101,7 @@ namespace RUISView
             btnSideMenu.Visibility = btnSideMenu.Visibility == Visibility.Visible
                 ? Visibility.Collapsed
                 : Visibility.Visible;
+
         }
 
         private void Opties_Click(object sender, RoutedEventArgs e)

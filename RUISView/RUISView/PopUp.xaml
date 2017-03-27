@@ -8,25 +8,25 @@
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
-    d:DesignHeight="240" d:DesignWidth="400" phone:PhoneApplicationPage.Orientation="Landscape">
+    d:DesignHeight="240" d:DesignWidth="400" RenderTransformOrigin="0.5,0.5">
 
 
-    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneChromeBrush}">
-        <Canvas x:Name="cnvOptions" Visibility="Collapsed">
+    <Grid x:Name="LayoutRoot" RenderTransformOrigin="0.5,0.5">
 
-            <TextBlock x:Name="txtblockSnelheid" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Snelheid" VerticalAlignment="Top" Height="27" Width="76"/>
-            <TextBlock x:Name="txtblockHerladenBijStart" HorizontalAlignment="Left" Margin="10,71,0,0" TextWrapping="Wrap" Text="Herladen bij start" VerticalAlignment="Top"/>
-            <TextBlock x:Name="txtblockToonNaam" HorizontalAlignment="Left" Margin="10,142,0,71" TextWrapping="Wrap" Text="Toon naam" RenderTransformOrigin="0.531,4.361"/>
-            <TextBlock x:Name="txtblockToonNaamDuratie" HorizontalAlignment="Left" Margin="10,213,0,0" TextWrapping="Wrap" Text="Toon naam duratie" VerticalAlignment="Top"/>
+        <Canvas x:Name="cnvOptions" Visibility="Visible">
 
-            <TextBlock x:Name="txtblockSnelheidSeconden" TextWrapping="Wrap" Text="seconden" Width="100" Margin="290,10,10,203"/>
-            <TextBlock x:Name="txtblockToonNaamDuratieSeconden" TextWrapping="Wrap" Text="seconden" Width="100" Margin="290,215,10,-2"/>
+            <TextBlock x:Name="txtblockSnelheid" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Snelheid" VerticalAlignment="Top" Height="27" Width="76" Canvas.Left="10" Canvas.Top="10" RenderTransformOrigin="0,0" Foreground="Red"/>
+            <TextBlock x:Name="txtblockHerladenBijStart" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Herladen bij start" VerticalAlignment="Top" Canvas.Left="10" Canvas.Top="70" RenderTransformOrigin="0.5,0.5" Width="162" Foreground="Red"/>
+            <TextBlock x:Name="txtblockToonNaam" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Toon naam" RenderTransformOrigin="0.531,4.361" Canvas.Left="10" Canvas.Top="136" Foreground="Red"/>
+            <TextBlock x:Name="txtblockToonNaamDuratie" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Toon naam duratie" VerticalAlignment="Top" Canvas.Left="10" Canvas.Top="203" RenderTransformOrigin="0.5,0.5" Foreground="Red"/>
 
-            <TextBox x:Name="txtboxInputSnelheid" HorizontalAlignment="Left" Height="50" Margin="225,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" VerticalScrollBarVisibility="Disabled" InputScope="OneChar"/>
-            <TextBox x:Name="txtboxInputToonNaamDuratie" HorizontalAlignment="Left" Height="50" Margin="225,201,0,-11" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" VerticalScrollBarVisibility="Disabled" InputScope="OneChar"/>
+            <TextBlock x:Name="txtblockSnelheidSeconden" TextWrapping="Wrap" Text="seconden" Width="100" Canvas.Left="288" Canvas.Top="208" RenderTransformOrigin="0.5,0.5" Foreground="Red"/>
+            <TextBlock x:Name="txtblockToonNaamDuratieSeconden" TextWrapping="Wrap" Text="seconden" Width="100" RenderTransformOrigin="0.5,0.5" Canvas.Left="288" Canvas.Top="15" Foreground="Red"/>
 
-            <CheckBox x:Name="cbInputHerladenBijStart" Content="" HorizontalAlignment="Left" Margin="225,55,0,0" VerticalAlignment="Top" Width="58" Height="73"/>
-            <CheckBox x:Name="cbInputToonNaam" HorizontalAlignment="Left" Margin="225,123,0,0" VerticalAlignment="Top" Width="58" Height="73"/>
+            <TextBox x:Name="txtboxInputSnelheid" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" VerticalScrollBarVisibility="Disabled" InputScope="Number" Canvas.Left="225" Canvas.Top="3" RenderTransformOrigin="0.5,0.5" BorderThickness="0" FontSize="15" SelectionForeground="Red" CaretBrush="Red" Foreground="Red" BorderBrush="Red"/>
+            <TextBox x:Name="txtboxInputToonNaamDuratie" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" VerticalScrollBarVisibility="Disabled" InputScope="Number" Canvas.Left="225" Canvas.Top="190" RenderTransformOrigin="-0.569,3.52" FontSize="15" BorderThickness="0"/>
+            <CheckBox x:Name="cbInputHerladenBijStart" HorizontalAlignment="Left" VerticalAlignment="Top" Width="58" Height="73" Canvas.Left="225" Canvas.Top="119" BorderBrush="Red"/>
+            <CheckBox x:Name="cbInputToonNaam" HorizontalAlignment="Left" VerticalAlignment="Top" Width="58" Height="73" Canvas.Left="225" Canvas.Top="58" BorderBrush="Red" Foreground="Red"/>
 
         </Canvas>
 

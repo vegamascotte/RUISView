@@ -14,27 +14,55 @@
     SupportedOrientations="Landscape"  Orientation="Landscape"
     shell:SystemTray.IsVisible="False">
 
-    <Grid x:Name="LayoutRoot" Background="Transparent">
-        <Image x:Name="imgSlideShow" HorizontalAlignment="Left" Height="480" VerticalAlignment="Top" Width="800"/>
+    <Grid x:Name="LayoutRoot" Background="Transparent" Tap="LayoutRoot_Tap">
+        <Image x:Name="imgSlideShow" HorizontalAlignment="Center" Height="480" VerticalAlignment="Center" Width="800" Stretch="UniformToFill"/>
         <!--It's in a canvas to be able to hide things and reactavite without too much trouble-->
-        <!--
-        <Canvas x:Name="cnvOverlay" Visibility="Collapsed">
-        -->
-        <!--Play and pause button are aligned here-->
-            <Button x:Name="btnPlayPause" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnPlayPause_Click" Margin="350,175,0,0" BorderThickness="0" BorderBrush="{x:Null}" ClickMode="Press" Foreground="{StaticResource PhoneBackgroundBrush}" RenderTransformOrigin="0.5,0.5">
-                <Button.Background>
-                    <ImageBrush Stretch="Fill" ImageSource="/Assets/play.png"/>
-                </Button.Background>
-            </Button>
 
-            <!--Side menu is alligned here-->
-            <Button x:Name="btnSideMenu" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnSideMenu_Click"  Margin="10,10,0,0" BorderBrush="{x:Null}" Foreground="{StaticResource PhoneBackgroundBrush}">
+        <!--Play and pause button are aligned here-->
+        <Button x:Name="btnPlayPause" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnPlayPause_Click" Margin="350,175,0,0" BorderThickness="0" BorderBrush="{x:Null}" ClickMode="Press" Foreground="{StaticResource PhoneBackgroundBrush}" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="/Assets/play.png"/>
+            </Button.Background>
+        </Button>
+
+        <!--Side menu is alligned here-->
+        <Button x:Name="btnSideMenu" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnSideMenu_Click"  Margin="10,10,0,0" BorderBrush="{x:Null}" Foreground="{StaticResource PhoneBackgroundBrush}" Visibility="Collapsed">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/parent.png"/>
+            </Button.Background>
+        </Button>
+
+        <Canvas x:Name="cnvSideMenu" Margin="0,0,722,0" Background="#7F000000" Width="75" Visibility="Collapsed">
+            <Button x:Name ="btnMapKeuze" Width="70" BorderBrush="White" Height="70" BorderThickness="0" >
                 <Button.Background>
-                    <ImageBrush ImageSource="/Assets/parent.png"/>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/folder.png"/>
                 </Button.Background>
             </Button>
-        <!--
+            <Button x:Name ="btnHerladen" Canvas.Top="75" Width="70" BorderBrush="White" Height="70" BorderThickness="0">
+                <Button.Background>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/refresh.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name ="Opties" Canvas.Top="150" Width="70" Click="Opties_Click" Height="70" BorderThickness="0" RenderTransformOrigin="0.563,1.407">
+                <Button.Background>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/settings.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name ="btnLaatstGetoondeFoto" Canvas.Top="255" Width="70" Height="70" BorderThickness="0">
+                <Button.Background>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/check.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name ="btnStatistieken" Canvas.Top="325" Width="70" Height="70" BorderThickness="0">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="/Assets/edit.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name ="Info" Canvas.Top="400" Width="70" Height="70" RenderTransformOrigin="0.522,-0.221" BorderThickness="0">
+                <Button.Background>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/i.png"/>
+                </Button.Background>
+            </Button>
         </Canvas>
-        -->
     </Grid>
 </phone:PhoneApplicationPage>

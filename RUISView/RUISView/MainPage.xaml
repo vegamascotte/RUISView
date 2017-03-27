@@ -14,27 +14,33 @@
     SupportedOrientations="Landscape"  Orientation="Landscape"
     shell:SystemTray.IsVisible="False">
 
-    <Grid x:Name="LayoutRoot" Background="Transparent">
-        <Image x:Name="imgSlideShow" HorizontalAlignment="Left" Height="480" VerticalAlignment="Top" Width="800"/>
+    <Grid x:Name="LayoutRoot" Background="Transparent" Tap="LayoutRoot_Tap">
+        <Image x:Name="imgSlideShow" HorizontalAlignment="Center" Height="480" VerticalAlignment="Center" Width="800" Stretch="UniformToFill"/>
         <!--It's in a canvas to be able to hide things and reactavite without too much trouble-->
-        <!--
-        <Canvas x:Name="cnvOverlay" Visibility="Collapsed">
-        -->
-        <!--Play and pause button are aligned here-->
-            <Button x:Name="btnPlayPause" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnPlayPause_Click" Margin="350,175,0,0" BorderThickness="0" BorderBrush="{x:Null}" ClickMode="Press" Foreground="{StaticResource PhoneBackgroundBrush}" RenderTransformOrigin="0.5,0.5">
-                <Button.Background>
-                    <ImageBrush Stretch="Fill" ImageSource="/Assets/play.png"/>
-                </Button.Background>
-            </Button>
 
-            <!--Side menu is alligned here-->
-            <Button x:Name="btnSideMenu" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnSideMenu_Click"  Margin="10,10,0,0" BorderBrush="{x:Null}" Foreground="{StaticResource PhoneBackgroundBrush}">
-                <Button.Background>
-                    <ImageBrush ImageSource="/Assets/parent.png"/>
-                </Button.Background>
-            </Button>
-        <!--
+        <!--Play and pause button are aligned here-->
+        <Button x:Name="btnPlayPause" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnPlayPause_Click" Margin="350,175,0,0" BorderThickness="0" BorderBrush="{x:Null}" ClickMode="Press" Foreground="{StaticResource PhoneBackgroundBrush}" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="/Assets/play.png"/>
+            </Button.Background>
+        </Button>
+
+        <!--Side menu is alligned here-->
+        <Button x:Name="btnSideMenu" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnSideMenu_Click"  Margin="10,10,0,0" BorderBrush="{x:Null}" Foreground="{StaticResource PhoneBackgroundBrush}" Visibility="Collapsed">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/parent.png"/>
+            </Button.Background>
+        </Button>
+
+        <Canvas x:Name="cnvSideMenu" Margin="0,0,710,0">
+            <Button x:Name ="btnMapKeuze" Canvas.Top="55" Width="90" BorderBrush="White" Background="Red" />
+            <Button x:Name ="btnHerladen" Canvas.Top="101" Width="90" BorderBrush="White" Background="Red"/>
+            <Button x:Name ="Opties" Canvas.Top="147" Width="90" Click="Opties_Click" Background="Red"/>
+            <Button x:Name ="btnLaatstGetoondeFoto" Canvas.Top="337" Width="90" Background="Red"/>
+            <Button x:Name ="btnStatistieken" Canvas.Top="383" Width="90" Background="Red"/>
+            <Button x:Name ="Info" Canvas.Top="429" Width="90" Background="Red"/>
+
         </Canvas>
-        -->
+
     </Grid>
 </phone:PhoneApplicationPage>

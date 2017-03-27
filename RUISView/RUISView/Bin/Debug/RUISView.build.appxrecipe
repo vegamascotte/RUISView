@@ -38,6 +38,9 @@
     <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\parent.png">
       <PackagePath>Assets\parent.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\pause.png">
+      <PackagePath>Assets\pause.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Assets\play.png">
       <PackagePath>Assets\play.png</PackagePath>
     </AppxPackagedFile>

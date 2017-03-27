@@ -34,3 +34,4 @@ C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\obj\Debug\Project
 C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\obj\Debug\MDILProjectFiles.xml
 C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\obj\Debug\XapCacheFile.xml
 C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\obj\Debug\PopUp.g.cs
+C:\Users\Joris\Documents\School\P11\RUISView\RUISView\RUISView\Bin\Debug\MainPage.xaml.cs

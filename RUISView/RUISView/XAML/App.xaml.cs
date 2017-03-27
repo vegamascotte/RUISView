@@ -73,6 +73,14 @@ namespace RUISView
                 // and consume battery power when the user is not using the phone.
                 PhoneApplicationService.Current.UserIdleDetectionMode = IdleDetectionMode.Disabled;
             }
+
+            using (Utility_Classes.DataContextBuilder db = new Utility_Classes.DataContextBuilder(Utility_Classes.DataContextBuilder.DBConnectionString))
+            {
+                if(db.DatabaseExists() == false)
+                {
+                    db.CreateDatabase();
+                }
+            }
         }
 
         // Code to execute when a contract activation such as a file open or save picker returns 

@@ -1,23 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
+﻿using System.IO;
+using RUISView.Resources;
 
 namespace RUISView
 {
     class PhotoView
     {
-        private System.IO.Stream m_nextPhotoLocation;
+        private Stream m_nextPhotoLocation;
         private string m_currentPhotoName = string.Empty;
         private string m_nextPhotoName = string.Empty;
-        private int m_times = 0;
-
-        public PhotoView ()
-        {
-            
-        }
+        private int m_times;
 
         #region PublicMethods
 
@@ -53,19 +44,19 @@ namespace RUISView
             {
                 case 0:
                     m_nextPhotoName = "testImage1.jpg";
-                    m_nextPhotoLocation = new MemoryStream(Resources.AppResources.testImage1);
+                    m_nextPhotoLocation = new MemoryStream(AppResources.testImage1);
                     m_times++;
                     break;
 
                 case 1:
                     m_nextPhotoName = "testImage2.jpg";
-                    m_nextPhotoLocation = new MemoryStream(Resources.AppResources.testImage2);
+                    m_nextPhotoLocation = new MemoryStream(AppResources.testImage2);
                     m_times++;
                     break;
 
                 case 2:
                     m_nextPhotoName = "testImage3.jpg";
-                    m_nextPhotoLocation = new MemoryStream(Resources.AppResources.testImage3);
+                    m_nextPhotoLocation = new MemoryStream(AppResources.testImage3);
                     m_times++;
                     break;
                 default:

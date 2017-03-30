@@ -7,7 +7,9 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using RUISView.Resources;
+using RUISView.DatabaseModel;
 using RUISView.ViewModels;
+using System.Linq;
 
 namespace RUISView
 {
@@ -73,6 +75,47 @@ namespace RUISView
                 // and consume battery power when the user is not using the phone.
                 PhoneApplicationService.Current.UserIdleDetectionMode = IdleDetectionMode.Disabled;
             }
+
+            using (DataContextBuilder db = new DataContextBuilder(DataContextBuilder.DBConnectionString))
+            {
+                if (db.DatabaseExists() == false)
+                {
+                    db.CreateDatabase();
+                }
+            }
+
+            DatabaseHandler dbHandler = DatabaseHandler.DbHandler;
+            DataContextBuilder dbTest = new DataContextBuilder("DataSource=isostore:/RUISviewDB.sdf");
+
+            Photos photo = new Photos()
+            {
+                p_Location = "pLocation",
+                p_PhotoName = "testPhoto",
+                p_ShowTime = 0,
+                p_TimesShown = 10
+            };
+
+            dbHandler.Interact(0, null, photo);
+
+            Maps map = new Maps();
+            map.m_MapLocation = "Testlocation";
+            map.m_MapName = "Testname";
+
+            Photos p2 = new Photos()
+            {
+                p_Location = "pLocation2",
+                p_PhotoName = "testPhoto2",
+                p_ShowTime = 2,
+                p_TimesShown = 20
+            };
+
+            dbHandler.Interact(0, map, null);
+            Maps m = dbTest.Maps.First();
+            string s = m.m_MapName;
+            photo.m_MapId = m.m_MapId;
+
+            dbHandler.Interact(0, null, p2);
+
         }
 
         // Code to execute when a contract activation such as a file open or save picker returns 

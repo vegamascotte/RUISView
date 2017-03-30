@@ -9,16 +9,6 @@ namespace RUISView.DatabaseModel
     {
         public Maps()
         {
-           // this._P_Rules = new EntitySet<DatabaseModel.P_Rules>(delegate (P_Rules entity)
-           //{
-           //    this.NotifyPropertyChanging("P_Rules");
-           //    entity.Maps = this;
-           //},
-           // delegate (P_Rules entity)
-           // {
-           //     this.NotifyPropertyChanged("P_Rules");
-           //     entity.Maps = null;
-           // });
         }
 
         private int _m_MapId;
@@ -30,25 +20,6 @@ namespace RUISView.DatabaseModel
                 return _m_MapId;
             }
         }
-
-        //private EntitySet<P_Rules> _P_Rules;
-        //[Association(Storage = "_P_Rules", OtherKey = "_m_MapId")]
-        //public EntitySet<P_Rules> P_Rules
-        //{
-        //    get { return this._P_Rules; }
-        //    set { this._P_Rules.Assign(value); }
-        //}
-
-        [Column]
-        private int PhotoId;
-
-        private EntitySet<Photos> _Photos;
-        [Association(Storage = "_Photos", OtherKey = "MapId")]
-        public EntitySet<Photos> Photos
-        {
-            get { return this._Photos; }
-            set { this._Photos.Assign(value); }
-        } 
 
         private string _m_MapName;
         [Column(Storage = "_m_MapName")]
@@ -82,7 +53,7 @@ namespace RUISView.DatabaseModel
                 if (_m_MapLocation != value)
                 {
                     NotifyPropertyChanging("_m_MapLocation");
-                    _m_MapName = value;
+                    _m_MapLocation = value;
                     NotifyPropertyChanged("_m_MapLocation");
                 }
             }

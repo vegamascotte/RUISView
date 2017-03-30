@@ -68,3 +68,4 @@ C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\obj\Debug\MultipleQualif
 C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\obj\Debug\ProjectArchitectures.txt
 C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\obj\Debug\MDILProjectFiles.xml
 C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\obj\Debug\XapCacheFile.xml
+C:\Users\Jeebleton\Documents\RUISView\RUISView\RUISView\obj\Debug\PopUp.g.cs

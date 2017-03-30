@@ -4,7 +4,9 @@ using Microsoft.Phone.Controls;
 using Windows.UI.Input;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
-
+using RUISView.DatabaseModel;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace RUISView
 {
@@ -25,10 +27,10 @@ namespace RUISView
             // Set the data context of the listbox control to the sample data
 
 
-
             m_timer.Interval = new System.TimeSpan(50000000);
-            
-            
+
+            DataContextBuilder db = new DataContextBuilder("DataSource=isostore:/RUISviewDB.sdf");
+
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
         }
@@ -80,6 +82,5 @@ namespace RUISView
             bmp.SetSource(m_photoView.GetNextPhotoLocation());
             imgSlideShow.Source = bmp;
         }
-
     }
-}
+} 

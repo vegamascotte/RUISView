@@ -144,4 +144,7 @@
   <data name="testImage3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>testImage3.jpg;System.Byte[], mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</value>
   </data>
+  <data name="DataConnectionString" xml:space="preserve">
+    <value>DataSource=isostore:/RUISviewDB.sdf</value>
+  </data>
 </root>

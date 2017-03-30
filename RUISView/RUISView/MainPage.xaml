@@ -21,18 +21,18 @@
         <Canvas x:Name="cnvOverlay" Visibility="Collapsed">
         -->
         <!--Play and pause button are aligned here-->
-            <Button x:Name="btnPlayPause" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnPlayPause_Click" Margin="350,175,0,0" BorderThickness="0" BorderBrush="{x:Null}" ClickMode="Press" Foreground="{StaticResource PhoneBackgroundBrush}" RenderTransformOrigin="0.5,0.5">
-                <Button.Background>
-                    <ImageBrush Stretch="Fill" ImageSource="/Assets/play.png"/>
-                </Button.Background>
-            </Button>
+        <Button x:Name="btnPlayPause" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnPlayPause_Click" Margin="350,175,0,0" BorderThickness="0" BorderBrush="{x:Null}" ClickMode="Press" Foreground="{StaticResource PhoneBackgroundBrush}" RenderTransformOrigin="0.5,0.5">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="/Assets/play.png"/>
+            </Button.Background>
+        </Button>
 
-            <!--Side menu is alligned here-->
-            <Button x:Name="btnSideMenu" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnSideMenu_Click"  Margin="10,10,0,0" BorderBrush="{x:Null}" Foreground="{StaticResource PhoneBackgroundBrush}">
-                <Button.Background>
-                    <ImageBrush ImageSource="/Assets/parent.png"/>
-                </Button.Background>
-            </Button>
+        <!--Side menu is alligned here-->
+        <Button x:Name="btnSideMenu" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnSideMenu_Click"  Margin="10,10,0,0" BorderBrush="{x:Null}" Foreground="{StaticResource PhoneBackgroundBrush}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/parent.png"/>
+            </Button.Background>
+        </Button>
         <!--
         </Canvas>
         -->

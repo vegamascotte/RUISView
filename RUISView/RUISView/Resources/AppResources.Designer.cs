@@ -88,6 +88,15 @@ namespace RUISView.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to DataSource=isostore:/RUISviewDB.sdf.
+        /// </summary>
+        public static string DataConnectionString {
+            get {
+                return ResourceManager.GetString("DataConnectionString", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to LeftToRight.
         /// </summary>
         public static string ResourceFlowDirection {

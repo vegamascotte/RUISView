@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Resources;
 using System.Windows;
 using System.Windows.Markup;
 using System.Windows.Navigation;
+using Windows.ApplicationModel.Activation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using RUISView.Resources;
@@ -15,7 +15,7 @@ namespace RUISView
 {
     public partial class App : Application
     {
-        private static MainViewModel viewModel = null;
+        private static MainViewModel viewModel;
 
         /// <summary>
         /// A static ViewModel used by the views to bind against.
@@ -60,7 +60,7 @@ namespace RUISView
             if (Debugger.IsAttached)
             {
                 // Display the current frame rate counters
-                Application.Current.Host.Settings.EnableFrameRateCounter = true;
+                Current.Host.Settings.EnableFrameRateCounter = true;
 
                 // Show the areas of the app that are being redrawn in each frame.
                 //Application.Current.Host.Settings.EnableRedrawRegions = true;
@@ -120,7 +120,7 @@ namespace RUISView
 
         // Code to execute when a contract activation such as a file open or save picker returns 
         // with the picked file or other return values
-        private void Application_ContractActivated(object sender, Windows.ApplicationModel.Activation.IActivatedEventArgs e)
+        private void Application_ContractActivated(object sender, IActivatedEventArgs e)
         {
         }
 
@@ -135,9 +135,9 @@ namespace RUISView
         private void Application_Activated(object sender, ActivatedEventArgs e)
         {
             // Ensure that application state is restored appropriately
-            if (!App.ViewModel.IsDataLoaded)
+            if (!ViewModel.IsDataLoaded)
             {
-                App.ViewModel.LoadData();
+                ViewModel.LoadData();
             }
         }
 
@@ -177,7 +177,7 @@ namespace RUISView
         #region Phone application initialization
 
         // Avoid double-initialization
-        private bool phoneApplicationInitialized = false;
+        private bool phoneApplicationInitialized;
 
         // Do not add any additional code to this method
         private void InitializePhoneApplication()

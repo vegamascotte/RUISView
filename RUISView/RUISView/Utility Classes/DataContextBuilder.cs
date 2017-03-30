@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace RUISView
 {
-    class DataContextBuilder : DataContext
+    public class DataContextBuilder : DataContext
     {
-        public static string DBConnectionString = Resources.AppResources.;
+        public static string DBConnectionString = Resources.AppResources.DataConnectionString;
         public Table<DatabaseModel.Maps> Maps;
         public Table<DatabaseModel.Photos> Photos;
 
